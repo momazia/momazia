@@ -25,6 +25,7 @@ Now, we need to forward the incoming requests on both ports `80` and `443` to ou
 ### 3.1. Install `apache2` on your server.
 
 `sudo apt install apache2`
+
 *[Link](https://ubuntu.com/tutorials/install-and-configure-apache#1-overview) to the reference*
 
 ### 3.2. Enable the necessary mods by running the followig commands:
@@ -36,6 +37,7 @@ sudo a2enmod proxy_balancer
 sudo a2enmod lbmethod_byrequests
 sudo service apache2 reload
 ```
+
 *[Link](https://serverfault.com/questions/195611/how-do-i-redirect-subdomains-to-a-different-port-on-the-same-server) to the reference*
 
 ### 3.3. Create an apache config file for your service
